@@ -1,0 +1,9 @@
+[remote]
+type = S3_TYPE
+provider = S3_PROVIDER
+env_auth = false
+access_key_id = S3_ACCESS
+secret_access_key = S3_KEY
+acl = private
+region = S3_REGION
+
