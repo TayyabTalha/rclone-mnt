@@ -39,7 +39,7 @@ sed -e  's@S3_TYPE@'"$S3_TYPE"'@g' \
 -e 's@S3_ACCESS@'"$S3_ACCESS"'@g' \
 -e 's@S3_KEY@'"$S3_KEY"'@g' \
 -e 's@S3_REGION@'"$S3_REGION"'@g' \
-/config/rclone.conf.sample > /config/.rclone.conf; 
+/config/rclone.conf.sample > /config/rclone.conf; 
 /usr/bin/rclone --config $ConfigPath mount $RemotePath $MountPoint $MountCommands &
 wait ${!}
 echo "rclone crashed at: $(date +%Y.%m.%d-%T)"
